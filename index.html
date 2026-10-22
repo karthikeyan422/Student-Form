@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form table</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white p-4">
+
+    <!-- Students form Detailes -->
+
+    <h1 class="font-bold text-4xl mb-4">Student Form</h1>
+
+    <div class=" border-2 border-gray-500 inline-block p-2">
+
+        <form id="studentForm">
+
+            <table class="border-separate border-spacing-1">
+
+                <tr>
+
+                    <td class="border-2 border-gray-400 text-center p-2 font-bold text-xl">
+                        Name
+                    </td>
+
+                    <td class="border-2 border-gray-400 p-1">
+                        <input type="text" id="name" placeholder="Enter your Name"
+                            class="border-2 border-gray-200 p-2 text-lg w-full" required>
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="border-2 border-gray-400 text-center p-2 font-bold text-xl">
+                        Age
+                    </td>
+
+                    <td class="border-2 border-gray-400 p-1">
+                        <input type="number" id="age" placeholder="Enter your age"
+                            class="border-2 border-gray-200 p-2 text-lg w-full" required>
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="border-2 border-gray-400 text-center p-2 font-bold text-xl">
+                        Gender
+                    </td>
+
+                    <td class="border-2 border-gray-400 p-2">
+
+                        <label class="text-lg mr-2">
+                            <input type="radio" name="gender" value="Male" required>
+                            Male
+                        </label>
+
+                        <label class="text-lg">
+                            <input type="radio" name="gender" value="Female">
+                            Female
+                        </label>
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="border-2 border-gray-400 text-center p-2 font-bold text-xl">
+                        Course
+                    </td>
+
+                    <td class="border-2 border-gray-400 p-1">
+                        <select id="course" class="border-2 border-gray-200 p-2 text-lg w-full">
+                            <option value="Full stack">Full stack</option>
+                            <option value="Data analytics">Data analytics</option>
+                            <option value="Python">Python</option>
+                            <option value="AI/ML">AI/ML</option>
+                            <option value="Automation Test">Automation Test</option>
+                        </select>
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="border-2 border-gray-400 text-center p-2 font-bold text-xl">
+                        E-mail
+                    </td>
+
+                    <td class="border-2 border-gray-400 p-1">
+                        <input type="email" id="email" placeholder="Enter your E-mail"
+                            class="border-2 border-gray-200 p-2 text-lg w-full" required>
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td colspan="2" class="p-1">
+                        <button id="submit"
+                            class="w-full bg-emerald-200 border-2 border-emerald-600 rounded-md p-2 text-xl text-emerald-800 hover:bg-emerald-300">
+                            Save
+                        </button>
+                    </td>
+
+                </tr>
+
+            </table>
+        </form>
+
+    </div>
+
+
+    <!-- Student Details Table -->
+
+    <div class="mx-auto w-full max-w-5xl overflow-x-auto">
+        <table class="w-full border-collapse border-2 border-gray-400">
+            <thead class="bg-gray-100">
+                <tr>
+                    <th class="border-2 border-gray-400 p-3">NAME</th>
+                    <th class="border-2 border-gray-400 p-3">AGE</th>
+                    <th class="border-2 border-gray-400 p-3">COURSE</th>
+                    <th class="border-2 border-gray-400 p-3">GENDER</th>
+                    <th class="border-2 border-gray-400 p-3">EMAIL</th>
+                    <th class="border-2 border-gray-400 p-3">ACTION</th>
+                </tr>
+            </thead>
+
+            <tbody id="studentList">
+                <!-- Saved student rows appear here -->
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="ifelse.js"></script>
+
+</body>
+
+</html>
